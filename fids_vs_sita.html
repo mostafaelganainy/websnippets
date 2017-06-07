@@ -29832,7 +29832,7 @@
 
 		var rowStyle = alt ? "alt" : "";		
 		rowStyle += !sita ? " missing_sita" : "";
-		rowStyle += !fids ? " missing_fids" : "";
+		rowStyle += !fids && !sita.flightType ? " missing_fids" : "";
 
 		missingInFids += !fids ? 1 : 0;
 		missingInSita += !sita ? 1 : 0;
